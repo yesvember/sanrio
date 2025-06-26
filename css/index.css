@@ -1,0 +1,22 @@
+/* base */
+@import url(./base/reset.css);
+@import url(./base/var.css);
+@import url(./base/font.css);
+/* components */
+@import url(./components/button.css);
+@import url(./components/modal.css);
+@import url(./components/aside.css);
+/* effects */
+@import url(./effects/animation.css);
+@import url(./effects/decorations.css);
+@import url(./effects/loading.css);
+/* layout */
+@import url(./layout/header.css);
+@import url(./layout/main.css);
+@import url(./layout/character.css);
+@import url(./layout/company.css);
+@import url(./layout/place.css);
+@import url(./layout/contact.css);
+@import url(./layout/footer.css);
+
+

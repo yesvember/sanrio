@@ -1,0 +1,25 @@
+/* 어사이드 메뉴 */
+.quick {
+    position: absolute;
+    right: 6rem;
+    top: 14.4rem;
+    z-index: 9998;
+}
+.sns {
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.sns__menu {
+    background-color: pink;
+}
+.sns__menu > a {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;    
+}
+.sns__menu > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

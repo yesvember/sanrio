@@ -1,0 +1,19 @@
+.section-contact {
+    padding: 10rem 0 8.5rem 0;
+
+    background-color: #4a679e;
+}
+.contact__logo {
+    margin-bottom: 1rem;
+}
+.contact__logo > img {
+    display: block;
+    margin: 0 auto;
+}
+.contact__header {
+    color: var(--white);
+}
+.contact__btn {
+    color: #fff;
+    border: solid 1px #fff;
+}
