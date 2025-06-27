@@ -445,15 +445,15 @@
                 </a>
             </div>
 
-            <div class="contact__map-wrap">
+            <div class="contact__item-wrap">
                 <div class="contact__map">
-                    <div id="map" style="width:500px; height:400px;"></div>
-                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4982b0345edb113f0a23c1a49e222414"></script>
-
+                    <div id="map" style="width:600px; height:350px;"></div>
+                    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4982b0345edb113f0a23c1a49e222414"></script> -->
                 </div>
+
                 <div class="contact__text-wrap">
                     <h3>
-                        서울시 강남구 테헤란로 509, 4층 (삼성동, 엔씨타워1)
+                        서울시 강남구 테헤란로 509, 4층 (삼성동,<br>엔씨타워1)
                     </h3>
                     <p>
                         509, Teheranro, Gangnam-gu, Seoul <br>
@@ -462,16 +462,28 @@
 
                     <ul class="contact__address">
                         <li>
+                            <em>
+                                m
+                            </em>
                             : webmaster@sanriokorea.co.kr
                         </li>
                         <li>
+                            <em>
+                                t
+                            </em>
                             : +82 (0) 2 543 3810
                         </li>
                         <li>
+                            <em>
+                                f
+                            </em>
                             : +82 (0) 2 543 2904
                         </li>
                     </ul>
                 </div>
+                <span class="contact__sticker">
+                    <img src="./img/contact_img.png" alt="">
+                </span>
             </div>
         </section>
     </div>
@@ -506,12 +518,12 @@
 
     <!-- script -->
     <script>
-		var container = document.getElementById('map');
-        var options = {
-        center: new kakao.maps.LatLng(37.5079606, 127.0614125),
-        level: 3
-        };
-        var map = new kakao.maps.Map(container, options);
+		// var container = document.getElementById('map');
+        // var options = {
+        // center: new kakao.maps.LatLng(37.5079606, 127.0614125),
+        // level: 3
+        // };
+        // var map = new kakao.maps.Map(container, options);
 	</script>
 </body>
 </html>

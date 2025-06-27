@@ -13,7 +13,54 @@
 .contact__header {
     color: var(--white);
 }
+.contact__btn-wrap {
+    margin-bottom: 5rem;
+}
 .contact__btn {
     color: #fff;
     border: solid 1px #fff;
+}
+.contact__item-wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 3rem;
+}
+.contact__item-wrap > div {
+    width: 50%;
+}
+.contact__text-wrap {
+    padding: 5rem;
+}
+.contact__text-wrap > h3 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+.contact__text-wrap > p {
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.contact__address > li {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+}
+.contact__address > li > em {
+    color: #4a679e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contact__sticker {
+    position: absolute;
+    right: 3rem;
+    bottom: -6rem;
 }
