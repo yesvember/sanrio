@@ -15,18 +15,22 @@
     overflow: hidden;
 }
 .title {
-    margin-bottom: 30px;
-    font-size: 5rem;
+    margin-bottom: 3rem;
     font-weight: 500;
+    font-size: 5rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-@media (max-width:1280px) {
+
+@media (max-width : 767px) {
+  .title {
+      font-size: 4.3rem;
+  }
 }
-@media (max-width : 768px) {
-}
-@media (max-width : 480px) {
-}
-@media (max-width : 320px) {
+@media (max-width : 736px) {
+  .title {
+      font-size: 3.2rem;
+      margin-bottom: 2rem;
+  }
 }

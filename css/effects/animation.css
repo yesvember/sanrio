@@ -1,0 +1,27 @@
+/* main animation */
+@keyframes upDown {
+    0% {
+    transform: translateY(-6px);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes mouse {
+    0% {
+        top: .4rem;
+        opacity: 1;
+    }
+    25% {
+        top: 1.6rem;
+        opacity: 0;
+    }
+    100% {
+        top: 1.6rem;
+        opacity: 0; 
+    }
+}

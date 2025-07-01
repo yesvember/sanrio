@@ -45,13 +45,46 @@
                 </a>
             </li>
         </ul>
+
+        <div class="header__menu-m">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <!-- header menu open -->
+    <div class="header__modal">
+        <ul>
+            <li class="header__modal-list title">
+                <a href="#none">
+                    company
+                </a>
+            </li>
+            <li class="header__modal-list title">
+                <a href="#none">
+                    character
+                </a>
+            </li>
+            <li class="header__modal-list title">
+                <a href="#none">
+                    place
+                </a>
+            </li>
+            <li class="header__modal-list title">
+                <a href="#none">
+                    recruit
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- all -->
     <div id="wrap" class="wrap">
         <main id="main" class="section-main">
             <figure class="main__img-wrap">
-                <img src="./img/main_visual_pc_v1.png" alt="main visual img">
+                <img class="main__img-pc" src="./img/main_visual_pc_v1.png" alt="pc main visual img">
+                <img class="main__img-m" src="./img/main_visual_m_v1.png" alt="mobile main visual img">
                 <figcaption class="hide">
                     sanrio img
                 </figcaption>
@@ -78,7 +111,8 @@
                     <span>
                         view more
                     </span>
-                    <img src="./img/ico_more1.png" alt="view more">
+                    <img class="btn-icon-pc" src="./img/ico_more1.png" alt="view more">
+                    <img class="btn-icon-m" src="./img/m_arr.png" alt="view more">
                 </a>
             </div>
 
@@ -191,7 +225,7 @@
                             </figure>
 
                             <div class="character__text-wrap">
-                                <h4>케로케로케로피</h4>
+                                <h4>케로케로<br class="character__empty">케로피</h4>
                                 <p>kerokerokeroppi</p>
                             </div>
                         </a>
@@ -275,7 +309,7 @@
                             </figure>
 
                             <div class="character__text-wrap">
-                                <h4>숲의요정페어리루</h4>
+                                <h4>숲의요정<br class="character__empty">페어리루</h4>
                                 <p>rilu rilu fairilu</p>
                             </div>
                         </a>
@@ -317,98 +351,128 @@
             <h2 class="title company__header">
                 company
             </h2>
-            <div class="commo__inner">
+            <div class="company__inner commo__inner">
                 <!-- article 01 -->
-                <article class="commo__item">
-                    <img src="./img/ico_company1.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        회사소개
-                    </h3>
-                    <p class="commo__item-decs">
-                        맑고 깨끗한 강가에<br>문화를 쌓아 올리자.
-                    </p>
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                <article class="company__item commo__item">
+                    <figure class="commo__img-wrap">
+                        <img src="./img/ico_company1.png" alt="회사소개 이미지">
+                    </figure>
+
+                    <div class="commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            회사소개
+                        </h3>
+                        <p class="commo__item-decs">
+                            맑고 깨끗한 강가에<br>문화를 쌓아 올리자.
+                        </p>
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
 
                 <!-- article 02 -->
-                <article class="commo__item">
-                    <img src="./img/ico_company3.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        회사소개
-                    </h3>
-                    <p class="commo__item-decs">
-                        맑고 깨끗한 강가에<br>문화를 쌓아 올리자.
-                    </p>
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                <article class="company__item commo__item">
+                    <figure class="commo__img-wrap">
+                        <img src="./img/ico_company3.png" alt="회사소개 이미지">
+                    </figure>
+
+                    <div class="commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            회사연혁
+                        </h3>
+                        <p class="commo__item-decs">
+                            산리오의 히스토리를<br>확인하세요.
+                        </p>
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
 
                 <!-- article 03 -->
-                <article class="commo__item">
-                    <img src="./img/ico_company4.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        회사소개
-                    </h3>
-                    <p class="commo__item-decs">
-                        맑고 깨끗한 강가에<br>문화를 쌓아 올리자.
-                    </p>
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                <article class="company__item commo__item">
+                    <figure class="commo__img-wrap">
+                        <img src="./img/ico_company4.png" alt="회사소개 이미지">
+                    </figure>
+
+                    <div class="commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            사업영역
+                        </h3>
+                        <p class="commo__item-decs">
+                            소셜 커뮤니케이션을<br>산리오가 시작합니다.
+                        </p>
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
             </div>
         </section>
 
         <!-- section 03 / recruit -->
-        <section id="company" class="section-commo section-recruit">
+        <section id="recruit" class="section-commo section-recruit">
             <h2 class="title recruit__header">
                 recruit
             </h2>
-            <div class="commo__inner">
+            <div class="recruit__inner commo__inner">
                 <!-- article 01 -->
-                <article class="commo__item">
-                    <img src="./img/ico_recruit1.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        채용공고
-                    </h3>
-                    <p class="commo__item-decs">
-                        산리오코리아에서<br>인재를 찾습니다
-                    </p>
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                <article class="recruit__item commo__item">
+                    <figure class="recruit__img-wrap commo__img-wrap">
+                        <img src="./img/ico_recruit1.png" alt="회사소개 이미지">
+                    </figure>
+
+                    <div class="recruit__text-wrap commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            채용공고
+                        </h3>
+                        <p class="commo__item-decs">
+                            산리오코리아에서<br>인재를 찾습니다
+                        </p>
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
 
                 <!-- article 02 -->
-                <article class="commo__item">
-                    <img src="./img/ico_recruit2.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        직무소개
-                    </h3>
-                    <p class="commo__item-decs">
-                        산리오코리아에서는<br>어떤 일을 할까요?
-                    </p>
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                <article class="recruit__item commo__item">
+                    <figure class="recruit__img-wrap commo__img-wrap">
+                        <img src="./img/ico_recruit2.png" alt="회사소개 이미지">
+                    </figure>
+
+                    <div class="recruit__text-wrap commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            직무소개
+                        </h3>
+                        <p class="commo__item-decs">
+                            산리오코리아에서는<br>어떤 일을 할까요?
+                        </p>
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
 
                 <!-- article 03 -->
-                <article class="commo__item">
-                    <img src="./img/ico_recruit3.png" alt="회사소개 이미지">
-                    <h3 class="commo__item-title">
-                        복리후생
-                    </h3>
-                    <p class="commo__item-decs">
-                        산리오코리아에서<br>누릴 수 있는것!
-                    </p>
+                <article class="recruit__item commo__item">
+                    <figure class="recruit__img-wrap commo__img-wrap">
+                        <img src="./img/ico_recruit3.png" alt="회사소개 이미지">
+                    </figure>
 
-                    <a href="#none" class="btn-s">
-                        more
-                    </a>
+                    <div class="recruit__text-wrap commo__text-wrap">
+                        <h3 class="commo__item-title">
+                            복리후생
+                        </h3>
+                        <p class="commo__item-decs">
+                            산리오코리아에서<br>누릴 수 있는것!
+                        </p>
+
+                        <a href="#none" class="btn-s">
+                            more
+                        </a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -418,12 +482,14 @@
             <h2 class="title place__header">
                 place
             </h2>
-               <div class="place__btn-wrap">
+       
+            <div class="place__btn-wrap">
                 <a href="#none" class="btn-b">
                     <span>
                         view more
                     </span>
-                    <img src="./img/ico_more1.png" alt="view more">
+                    <img class="btn-icon-pc" src="./img/ico_more1.png" alt="view more">
+                    <img class="btn-icon-m" src="./img/m_arr.png" alt="view more">
                 </a>
             </div>
         </section>
@@ -436,24 +502,27 @@
             <h2 class="title contact__header">
                 contact us
             </h2>
+
             <div class="contact__btn-wrap">
                 <a href="#none" class="btn-b contact__btn">
                     <span>
                         view more
                     </span>
-                    <img src="./img/ico_more2.png" alt="view more">
+                    <img class="btn-icon-pc" src="./img/ico_more2.png" alt="view more">
+                    <img class="btn-icon-m" src="./img/m_arrw.png" alt="view more">
                 </a>
             </div>
+            
 
             <div class="contact__item-wrap">
                 <div class="contact__map">
-                    <div id="map" style="width:600px; height:350px;"></div>
-                    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4982b0345edb113f0a23c1a49e222414"></script> -->
+                    <div id="map" style="position:relative; width:100%; height: 100%; overflow: hidden;"></div>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4982b0345edb113f0a23c1a49e222414"></script>
                 </div>
 
                 <div class="contact__text-wrap">
                     <h3>
-                        서울시 강남구 테헤란로 509, 4층 (삼성동,<br>엔씨타워1)
+                        서울시 강남구 테헤란로 509, 4층 (삼성동, 엔씨타워1)
                     </h3>
                     <p>
                         509, Teheranro, Gangnam-gu, Seoul <br>
@@ -494,9 +563,11 @@
             <img src="./img/copyright_2023_02_v2.png" alt="">
         </p>
 
-        <a href="#none" class="footer__btn">
-            개인정보처리방침
-        </a>
+        <div class="footer__btn-wrap">
+            <a href="#none" class="footer__btn">
+                        개인정보처리방침
+            </a>
+        </div>
     </footer>
 
 
@@ -517,13 +588,14 @@
     </aside>
 
     <!-- script -->
+    <script src="./js/index.js" defer></script>
     <script>
-		// var container = document.getElementById('map');
-        // var options = {
-        // center: new kakao.maps.LatLng(37.5079606, 127.0614125),
-        // level: 3
-        // };
-        // var map = new kakao.maps.Map(container, options);
+		var container = document.getElementById('map');
+        var options = {
+        center: new kakao.maps.LatLng(37.5079606, 127.0614125),
+        level: 3
+        };
+        var map = new kakao.maps.Map(container, options);
 	</script>
 </body>
 </html>

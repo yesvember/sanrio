@@ -3,4 +3,22 @@
     height: 100%;
     min-height: 50rem;
     background: url(../../img/bg_shop.jpg)center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+@media (max-width : 1024px) {
+    .section-place {
+        background: url(../../img/tbg_shop.jpg)center center no-repeat;
+    }
+}
+@media (max-width : 767px) {
+    .section-place {
+        min-height: 48rem;
+    }
+}
+@media (max-width : 736px) {
+    .section-place {
+        padding-top: 5.5rem;
+        min-height: 24rem;
+    }
 }

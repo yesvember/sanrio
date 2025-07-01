@@ -1,0 +1,34 @@
+.header__modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: 0;
+    z-index: 9998;
+    transition: width .2s ease-in-out, opacity .2s ease-in-out;
+}
+.header__modal > ul {
+    padding-top: 17rem;
+}
+.header__modal-list {
+    margin-bottom: 5rem;
+    font-size: 4.2rem;
+}
+
+/* active */
+.header__modal.active {
+    width: 100%;
+    opacity: 1;
+}
+
+@media (max-width:736px) {
+    .header__modal > ul {
+        padding-top: 10rem;
+    }
+    .header__modal-list {
+        margin-bottom: 2.5rem;
+        font-size: 2.8rem;
+    }
+}
